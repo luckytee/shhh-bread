@@ -3,13 +3,7 @@ body {
 }
 
 li {
-    display: inline;
-}
-
-nav {
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 50px;
+    display: block;
 }
 
 nav a {
@@ -17,18 +11,44 @@ nav a {
     font-size: 21px;
 }
 
+nav a:hover {
+    text-transform: uppercase;
+}
+
 nav li {
     margin: 10px;
 }
 
 nav .active a{
-	background: white;
+	background: #f1e6fa;
     text-transform: uppercase;
 	text-align: center;
     text-decoration: none;
+    color: #0000ff;
+}
+
+p {
+    width: 80%;
+    text-align: justify;
+}
+
+form {
+    margin:40px;
+}
+
+form input {
+    margin-bottom: 20px;
+}
+
+form > *:hover {
+    background-color: #ffff00;
+    text-transform: uppercase;
+    color: #3a3737;
 }
 
 h1 {
+    text-align: center;
+    display:block;
     font-size: 30px;
     font-weight: bolder;
     margin: 20px;
@@ -40,15 +60,32 @@ h1:before, h1:after {
     content: "\2764";
 }
 
+#mode {
+    display: block;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: auto;
+    width: 15%;
+    border: none;
+    background:yellow;
+    border-radius: 3px;
+}
+
+#mode:hover {
+    text-transform: uppercase;
+}
+
+.night_mode_background {
+    background-color: #140a4c;
+}
+.night_mode_text {
+    color: #f1e6fa;
+}
+
+
 main p {
     margin: 20px;
     font-size: 20px;
-}
-
-footer p {
-    margin: 10px;
-    font-size: 15px;
-    color: #3a3737;
 }
 
 .skip {
@@ -58,7 +95,7 @@ footer p {
 }
 
 .skip {
-    background: white;
+    background: #f1e6fa;
     height: 30px;
     left: 5%;
     position: absolute;
@@ -85,7 +122,7 @@ footer p {
     display: grid;
     width: 100%;
     grid-template-columns: 33% 33%;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 50px;
 }
 .gallery_dough img {
@@ -95,22 +132,43 @@ footer p {
 }
 
 .gallery_bread {
-	display: block;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: space-around;
+    margin-bottom: 50px;    
+    align-items: center;
 }
 .gallery_bread img {
-    width: 60%;
+    width: 80%;
     height:fit-content;
-    margin: 5%;
+    margin: 2%;
+    border-radius: 5px;
+}
+
+div img:hover, div img:focus {
+    border: solid 7px #f1e6fa;
     border-radius: 5px;
 }
 
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 650px) {
+
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    li {
+        display: inline;
+    }
+
+    nav {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        margin-left: 35px;
+    }
     
     .gallery_dough {
         grid-template-columns: 25% 25% 25%;
@@ -127,6 +185,7 @@ footer p {
 
     h1 {
         margin-top: 50px;
+        font-size: 50px;
     }
 
     .gallery_dough {
