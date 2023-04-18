@@ -1,3 +1,8 @@
+header img {
+    position:fixed;
+    transform: translateY(-150%);
+}
+
 body {
     background-color: #b9a8d4;
 }
@@ -86,7 +91,7 @@ main p {
 }
   
 .skip:focus {
-    transform: translateY(0%);
+    transform: translateY(-25%);
 }
 
 @media (prefers-reduced-motion) {
@@ -133,6 +138,11 @@ div img:hover, div img:focus {
 
 
 @media only screen and (min-width: 650px) {
+
+    header img {
+        position:static;
+        transform: translateY(0%);
+    }
 
     h1 {
         margin-top: 30px;
