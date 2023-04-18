@@ -92,7 +92,7 @@ main p {
 }
   
 .skip:focus {
-    transform: translateY(-25%);
+    transform: translateY(-5%);
 }
 
 @media (prefers-reduced-motion) {
