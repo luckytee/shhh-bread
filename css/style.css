@@ -86,22 +86,14 @@ main p {
     background: #f1e6fa;
     height: 30px;
     left: 5%;
+    padding: 8px;
     position: absolute;
     transform: translateY(-100%);
-    transition: transform 0.5s;
 }
   
 .skip:focus {
     transform: translateY(0%);
-}
-
-@media (prefers-reduced-motion) {
-    .skip {
-        -webkit-transition: none !important;
-        -moz-transition: none !important;
-        -o-transition: none !important;
-        transition: none !important;
-    }
+    position: relative;
 }
 
 .gallery_dough {
