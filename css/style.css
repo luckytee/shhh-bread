@@ -36,7 +36,6 @@ nav .active a{
 p {
     width: 80%;
     text-align: justify;
-    padding-bottom: 50px;
 }
 
 h1 {
@@ -80,6 +79,7 @@ main p {
     margin: auto;
     margin-top: 40px;
     font-size: 20px;
+    padding-bottom: 50px;
 }
 
 .skip {
