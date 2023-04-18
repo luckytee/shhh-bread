@@ -1,3 +1,9 @@
+header img {
+    visibility: hidden;
+    position:fixed;
+    transform: translateY(-100%);
+}
+
 body {
     background-color: #b9a8d4;
 }
@@ -16,7 +22,8 @@ nav a:hover {
 }
 
 nav li {
-    margin: 10px;
+    margin: 20px;
+    margin-left: 30px;
 }
 
 nav .active a{
@@ -32,27 +39,13 @@ p {
     text-align: justify;
 }
 
-form {
-    margin:40px;
-}
-
-form input {
-    margin-bottom: 20px;
-}
-
-form > *:hover {
-    background-color: #ffff00;
-    text-transform: uppercase;
-    color: #3a3737;
-}
-
 h1 {
     text-align: center;
     display:block;
     font-size: 30px;
     font-weight: bolder;
     margin: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-family:'Courier New', Courier, monospace;
 }
 
@@ -62,10 +55,10 @@ h1:before, h1:after {
 
 #mode {
     display: block;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-right: 20px;
     margin-left: auto;
-    width: 15%;
+    width: 20%;
     border: none;
     background:yellow;
     border-radius: 3px;
@@ -84,14 +77,9 @@ h1:before, h1:after {
 
 
 main p {
-    margin: 20px;
+    margin: auto;
+    margin-top: 40px;
     font-size: 20px;
-}
-
-.skip {
-    position: absolute;
-    left: 5%;
-    transform: translateY(-100%);
 }
 
 .skip {
@@ -99,7 +87,7 @@ main p {
     height: 30px;
     left: 5%;
     position: absolute;
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     transition: transform 0.5s;
 }
   
@@ -115,8 +103,6 @@ main p {
         transition: none !important;
     }
 }
-
-
 
 .gallery_dough {
     display: grid;
@@ -153,6 +139,12 @@ div img:hover, div img:focus {
 
 
 @media only screen and (min-width: 650px) {
+
+    header img {
+        visibility:visible;
+        position:static;
+        transform: translateY(0%);
+    }
 
     h1 {
         margin-top: 30px;
