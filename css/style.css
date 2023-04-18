@@ -87,7 +87,7 @@ main p {
     height: 30px;
     left: 5%;
     position: absolute;
-    transform: translateY(-200%);
+    transform: translateY(-100%);
     transition: transform 0.5s;
 }
   
