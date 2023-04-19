@@ -15,6 +15,9 @@ li {
 nav a {
     background: yellow;
     font-size: 21px;
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
 }
 
 nav a:hover {
@@ -63,6 +66,7 @@ h1:before, h1:after {
     background:yellow;
     border-radius: 3px;
     font-family:'Courier New', Courier, monospace;
+    padding: 2px;
 }
 
 #mode:hover {
